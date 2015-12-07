@@ -1,0 +1,374 @@
+/* style.css
+-----------------------------------------------------
+ *	THEME V.1.0
+ *	Designed by Santo
+ *	Website www.softwareseni.com
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+ * TYPOGRAPHY
+-------------------------------------------------- */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body { 
+	height:100%; 
+}
+body {
+	background-color: #fff;
+    color: #7a7c7f;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+    line-height: 1.42857;
+    margin: 0;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+	font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+h1 { font-size: 34px; }
+h2 { font-size: 28px; }
+h3 { font-size: 22px; }
+
+/* BODY COPY */
+p {
+	margin: 0 0 10px;
+}
+
+/* LINK */
+a {
+	color: #337ab7;
+	text-decoration: none;
+	-webkit-transition: ease .3s;
+			transition: ease .3s;
+}
+a:hover,
+a:focus {
+	color: #23527c;
+}
+
+/* --------------------------------------------------
+ * GRID SYSTEM
+-------------------------------------------------- */
+/* CONTAINER */
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* ROW */
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+/* COLUMN */
+[class*="col-"] {
+    position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/* --------------------------------------------------
+ * COMMON
+-------------------------------------------------- */
+/* NAVBAR */
+.logo {
+	border-radius:50%;
+	height:100px;
+	width:100px;
+	display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* MENU */
+.menu-wrapper {
+	text-align: center;
+	padding: 15px 0 0;
+}
+.menu {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.menu-title {
+	border-top: 1px solid #e7e7e7;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.menu-list {
+	width: 100%;
+	list-style: none;
+	float: left;
+	padding:0;
+	margin:0;
+	
+}
+.menu-list li {
+	white-space: nowrap;
+	display: block;
+	width: 100%;
+}
+.menu-list > li:first-child {
+    border-top: 5px solid #ccc;
+}
+.menu-list > li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+.menu-list > li > a {
+    display: block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+/* HEADER */
+.header {
+    background: #dadfe3;
+    border-bottom: 5px solid #ccc;
+    border-top: 5px solid #ccc;
+    display: table;
+    height: 50%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    width: 100%;
+}
+.header-inner {
+	display: table-cell;
+    vertical-align: middle;
+	text-align:center
+}
+.header-inner h1 {
+	margin-top:0
+}
+
+/* FOOTER */
+.footer {
+	background: #c3c8cc;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+.footer h3{
+	margin-top:0
+}
+
+/* --------------------------------------------------
+ * COMPONENTS
+-------------------------------------------------- */
+/* MAIN CONTENT */
+.main-content {
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+.main-content .box:nth-child(2n+1) {
+    clear: left;
+}
+.main-content .img-responsive,
+.main-content .video-responsive {
+    border-radius: 5px;
+}
+
+/* BOX */
+.box {
+	margin-bottom:30px
+}
+
+/* IMAGE RESPONSIVE + RATIO */
+.img-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.4%;
+	position: relative;
+	width: 100%;
+}
+.img-responsive > span {
+	height: 200%;
+	left: -50%;
+	position: absolute;
+	top: -50%;
+	width: 200%;
+}
+.img-responsive > span > img {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	min-height: 50%;
+	min-width: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* VIDEO RESPONSIVE */
+.video-responsive {
+	position: relative;
+	display: block;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+}
+.video-responsive > iframe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* LOGO MODAL */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 50;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.7s;
+}
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 100;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s ease-out;
+	background-color: #fff;
+	box-shadow: 0px 9px 15px -5px rgba(0, 0, 0, 0.46);
+	padding: 15px;
+	margin-right:-50%;
+	-webkit-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+}
+
+.modal-in{
+	visibility: visible;
+	opacity: 1;
+	transition: all .2s;
+}
+.modal-in + .modal-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+.close {
+	background: #ddd;
+    border: 0;
+    color: #777;
+    cursor: pointer;
+    font-weight: 900;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+
+/* FOOTER GALLERY */
+.footer-gallery {
+    font-size: 0;
+    margin: 0 -5px;
+    padding: 0;
+}
+.footer-gallery > li {
+	display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 33.33333333%;
+    padding: 0 5px;
+}
+.footer-gallery img {
+    max-width: 100%;
+	height:auto;
+	display:block
+}
+
+/* --------------------------------------------------
+ * MERGE
+-------------------------------------------------- */
+.container:before, .container:after, .row:before, .row:after, .nav:before, .nav:after {
+	display: table;
+	content: " ";
+}
+
+.container:after, .row:after, .nav:after {
+	clear: both;
+}
+
+/* --------------------------------------------------
+ * MEDIA QUERIES
+-------------------------------------------------- */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	/* Grid System */
+	.container {
+		width: 750px;
+	}
+	.col-sm-6 {
+		float: left;width:50%
+	}
+	
+	/* Menu */
+	.menu-wrapper {
+		padding: 15px 0
+	}
+	.menu {
+		margin: 0 -15px;
+	}
+	.menu-title {
+		display: none;
+		border-top:0;
+	}
+	.menu-list {
+		display: block !important;
+		overflow: visible;
+		max-height: 40px;
+	}
+	.menu-list li {
+		width: auto;
+		display: inline-block;
+		border: 0 !important;
+	}
+	
+	/* Cammon */
+	.wrapper {
+		padding-top:60px;
+		padding-bottom:35px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	/* Grid System */
+	.container {
+		width: 970px;
+	}
+	.col-md-3{
+		float: left;width:25%
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
