@@ -90,11 +90,12 @@ a:focus {
     display: inline-block;
 }
 .logo {
-	border-radius:50%;
-	height:100px;
-	width:100px;
-	display: inline-block;
+	background: #e7e7e7;
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
     margin-bottom: 15px;
+    width: 100px;
 }
 
 /* MENU */
@@ -138,7 +139,7 @@ a:focus {
 }
 .menu-list > li > a {
     display: block;
-    padding: 10px 15px;
+    padding: 6px 15px;
     text-transform: uppercase;
 }
 
@@ -157,7 +158,6 @@ a:focus {
 }
 .header-inner {
 	background: rgba(255, 255, 255, 0.8);
-    color: #333;
     display: table-cell;
     height: 100%;
     padding-bottom: 20px;
@@ -191,10 +191,6 @@ a:focus {
 .main-content .box:nth-child(2n+1) {
     clear: left;
 }
-.main-content .img-responsive,
-.main-content .video-responsive {
-    border-radius: 5px;
-}
 
 /* BOX */
 .box {
@@ -202,48 +198,27 @@ a:focus {
 }
 
 /* IMAGE RESPONSIVE + RATIO */
-.img-responsive {
-	height: 0;
-	overflow: hidden;
-	padding-bottom: 56.4%;
-	position: relative;
+.img-responsive img {
+	height: auto;
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
 	width: 100%;
-}
-.img-responsive > span {
-	height: 200%;
-	left: -50%;
-	position: absolute;
-	top: -50%;
-	width: 200%;
-}
-.img-responsive > span > img {
-	bottom: 0;
-	left: 0;
-	margin: auto;
-	min-height: 50%;
-	min-width: 50%;
-	position: absolute;
-	right: 0;
-	top: 0;
 }
 
 /* VIDEO RESPONSIVE */
-.video-responsive {
-	position: relative;
-	display: block;
-	height: 0;
-	padding: 0;
-	overflow: hidden;
-	padding-bottom: 56.25%;
-}
 .video-responsive > iframe {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	border: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 /* LOGO MODAL */
@@ -320,12 +295,24 @@ a:focus {
 /* --------------------------------------------------
  * MERGE
 -------------------------------------------------- */
+/* CLEAR */
 .container:before, .container:after, .row:before, .row:after, .nav:before, .nav:after {
 	display: table;
 	content: " ";
 }
 .container:after, .row:after, .nav:after {
 	clear: both;
+}
+
+/* RESPONSIVE MEDIA */
+.img-responsive, .video-responsive {
+    border-radius: 5px;
+	position: relative;
+	display: block;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
 }
 
 /* --------------------------------------------------
@@ -343,7 +330,7 @@ a:focus {
 	
 	/* Menu */
 	.menu-wrapper {
-		padding: 25px 0 15px
+		padding: 30px 0;
 	}
 	.menu {
 		margin: 0 -15px;
@@ -355,18 +342,20 @@ a:focus {
 	.menu-list {
 		display: block !important;
 		overflow: visible;
-		max-height: 40px;
 	}
 	.menu-list li {
 		width: auto;
 		display: inline-block;
 		border: 0 !important;
 	}
+	.menu-list > li > a {
+		border: 2px solid #e7e7e7;
+	}
 	
 	/* Cammon */
 	.wrapper {
 		padding-top:60px;
-		padding-bottom:35px;
+		padding-bottom:20px;
 	}
 }
 
