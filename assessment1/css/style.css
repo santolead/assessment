@@ -19,7 +19,7 @@ html, body {
 body {
 	background-color: #fff;
     color: #7a7c7f;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
     line-height: 1.42857;
     margin: 0;
@@ -27,14 +27,20 @@ body {
 
 /* HEADINGS */
 h1, h2, h3 {
-	font-weight: 500;
+	font-weight: 300;
     line-height: 1.1;
     margin-bottom: 10px;
     margin-top: 20px;
 }
-h1 { font-size: 34px; }
-h2 { font-size: 28px; }
-h3 { font-size: 22px; }
+h1 {
+	font-size: 34px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 22px;
+}
 
 /* BODY COPY */
 p {
@@ -80,6 +86,9 @@ a:focus {
  * COMMON
 -------------------------------------------------- */
 /* NAVBAR */
+.modal-btn {
+    display: inline-block;
+}
 .logo {
 	border-radius:50%;
 	height:100px;
@@ -101,7 +110,7 @@ a:focus {
 	border-top: 1px solid #e7e7e7;
     cursor: pointer;
     display: block;
-    font-weight: bold;
+    font-weight: 600;
     margin-left: -15px;
     margin-right: -15px;
     padding: 15px;
@@ -135,19 +144,27 @@ a:focus {
 
 /* HEADER */
 .header {
-    background: #dadfe3;
+	background-attachment: fixed;
+	background-image: url('../img/header.jpg');
+	background-position: center top;
+    background-repeat: no-repeat;
+	background-size: cover;
     border-bottom: 5px solid #ccc;
     border-top: 5px solid #ccc;
     display: table;
-    height: 50%;
-    padding-bottom: 20px;
-    padding-top: 30px;
+    height: 65%;
     width: 100%;
 }
 .header-inner {
-	display: table-cell;
+	background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    display: table-cell;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    text-align: center;
     vertical-align: middle;
-	text-align:center
+    width: 100%;
 }
 .header-inner h1 {
 	margin-top:0
@@ -258,7 +275,6 @@ a:focus {
         -ms-transform: translate(-50%, -50%) !important;
             transform: translate(-50%, -50%) !important;
 }
-
 .modal-in{
 	visibility: visible;
 	opacity: 1;
@@ -274,7 +290,7 @@ a:focus {
     border: 0;
     color: #777;
     cursor: pointer;
-    font-weight: 900;
+    font-weight: 700;
     height: 30px;
     position: absolute;
     right: 0;
@@ -308,7 +324,6 @@ a:focus {
 	display: table;
 	content: " ";
 }
-
 .container:after, .row:after, .nav:after {
 	clear: both;
 }
@@ -328,7 +343,7 @@ a:focus {
 	
 	/* Menu */
 	.menu-wrapper {
-		padding: 15px 0
+		padding: 25px 0 15px
 	}
 	.menu {
 		margin: 0 -15px;
