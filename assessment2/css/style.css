@@ -387,6 +387,13 @@ a:focus {
     width: 100%;
 }
 
+/* FOOTER */
+@media (max-width:991px) {
+	.footer .box:nth-child(2n+1) {
+		clear: left;
+	}
+}
+
 /* FOOTER RECENT */
 .footer-recent .media {
 	border-bottom: 1px solid #658792;
