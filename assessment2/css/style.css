@@ -453,6 +453,9 @@ a:focus {
 .our-agents span {
     display: block;
 }
+.our-agents span:nth-child(2) {
+    font-size: 12px;
+}
 .our-agents .media-body {
     border-bottom: 1px solid #658792;
 	padding-bottom: 14px;
@@ -474,11 +477,35 @@ a:focus {
 
 /* LIST VIEW */
 .list-view {
-	background:#fff;
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+	margin-bottom: 30px !important;
 }
 .list-view .media-left img {
     max-width: 250px;
+}
+	
+	
+/* Pagination */
+.pagination {
+    text-align: center;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination li a {
+	background-color: transparent;
+	border: 0px;
+	border-top: 3px solid #E0E0E0;
+	color: #616161;
+	font-size: 15px;
+	padding: 14px 18px;
+	transition: all .15s linear; }
+	.pagination li a:hover {
+	color: #616161;
+}
+.pagination .active a {
+    border-color: #ec407a !important;
 }
 
 /* ARCHIVE */
@@ -542,9 +569,10 @@ a:focus {
 
 /* SIDEBAR */
 .sidebar > .our-agents {
-	background:#fff;
-	box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.1), 0 5px 5px -5px rgba(0, 0, 0, 0.1), -5px 0 5px -5px rgba(0, 0, 0, 0.1);
-	padding: 15px;
+	background-color: #fff;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+	margin-bottom: 15px;
+	padding: 16px;
 }
 .sidebar > .our-agents .media-body,
 .sidebar > .listing .media {
@@ -560,14 +588,14 @@ a:focus {
 }
 .footer .contact .socmed a {
     background: #5B7F8B;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 50%;
-    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
     display: block;
-    height: 35px;
-    line-height: 35px;
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
     text-align: center;
-    width: 35px;
+    width: 38px;
 }
 .contact .socmed li:not(:last-child) a {
     margin-right: 10px;
