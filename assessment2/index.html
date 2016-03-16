@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="http://gmpg.org/xfn/11" rel="profile">
-	
-	<title>ASSESSMENT #2</title>
-	
-	<!-- Google Font -->
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500%7CMontserrat' rel='stylesheet' type='text/css'>
-	
-	<!-- CSS -->
-    <link rel="stylesheet" href="fonts/font-awesome-4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+	<title>ASSESSMENT #2</title>
+
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700%7CMontserrat' rel='stylesheet' type='text/css'>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
-	
+
 	<!-- HEADER
 	================================================== -->
 	<header>
-	
+
 		<!-- HEADER TOP -->
-		<div class="top-header">
+		<div class="header-top">
 			<div class="container">
 				<div class="row">
-			
+
 					<!-- Header Top Left -->
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<ul class="breadcrumb">
 							<li><a href="#">Home</a></li>
 							<li><a href="#">Properties</a></li>
 						</ul>
 					</div>
-				
+
 					<!-- Header Top Right -->
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<ul class="sign">
 							<li><a href="#">Login</a></li>
 							<li><a href="#">Register</a></li>
 						</ul>
 					</div>
-						
-				</div> <!-- End Container -->
-			</div> <!-- End Container -->
-		</div> <!-- End Top Header -->
-	
+
+				</div> <!-- /.row -->
+			</div> <!-- /.container-->
+		</div> <!-- /.header-top -->
+
 		<!-- HEADER MAIN -->
-		<div class="main-header">
+		<div class="header-main">
 			<div class="container">
 				<div class="row">
-					
+
 					<!-- Logo -->
 					<div class="col-sm-4 col-md-5 header-brand">
 						<h1><a href="index.html">Realty<span>.com</span></a></h1>
 					</div>
-					
+
 					<!-- Contact -->
 					<div class="col-sm-8 col-md-7 header-contact">
 						<div class="row">
-						
+
 							<div class="col-sm-4">
 								<div class="media">
 									<div class="media-left">
@@ -100,265 +101,417 @@
 									</div>
 								</div>
 							</div>
-							
-						</div>
-					</div>
-					
-				</div> <!-- End Row -->
-			</div> <!-- End Container -->
-		</div> <!-- End Main Header -->
-		
-		<!-- NAV -->
-		<nav class="main-nav">
+
+						</div> <!-- /.row -->
+					</div> <!-- /.contact -->
+
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.header-main -->
+
+		<!-- Header Nav -->
+		<nav class="header-nav">
 			<div class="container">
-			
-				<div class="menu-toggle">Menu</div>
-				<ul>
+
+				<!-- <div class="menu-toggle">Menu</div> -->
+				<ul class="navbar-nav">
 					<li><a href="#">Home</a></li>
 					<li class="active"><a href="#">Buy</a></li>
-					<li><a href="#">Sell</a></li>
+					<li class="dropdown">
+						<a href="">Properties</a>
+						<ul class="dropdown-menu">
+							<li class="dropdown">
+								<a href="">Monotremes</a>
+								<ul class="dropdown-menu">
+									<li><a href="">Echidnas</a></li>
+									<li><a href="">Platypus</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Rent</a></li>
+							<li><a href="#">Find an Agent</a></li>
+							<li><a href="#">About</a></li>
+						</ul>
+					</li>
 					<li><a href="#">Rent</a></li>
 					<li><a href="#">Find an Agent</a></li>
 					<li><a href="#">About</a></li>
 				</ul>
-				
-			</div> <!-- End Container -->
-		</nav> <!-- Main Nav -->
-		
-	</header> <!-- End Header -->
-	
+
+			</div> <!-- /.container -->
+		</nav> <!-- /.header-nav -->
+
+	</header> <!-- /.header -->
+
 	<!-- CONTENT
 	================================================== -->
 	<div class="container wrapper">
 		<div class="row">
-			
+
 			<!-- MAIN -->
 			<div class="col-md-9 main">
-				
+
 				<!-- HEADING -->
-				<div class="heading-wrapper">
+				<div class="heading">
 					<h2 class="heading-title">All Properties</h2>
-					<div class="results-view">
-						<span class="grid"><i class="fa fa-th"></i></span>
-						<span class="list"><i class="fa fa-th-list"></i></span>
+					<div class="heading-switch">
+						<button class="grid" title="grid view"><i class="fa fa-th"></i></button>
+        				<button class="list" title="list view"><i class="fa fa-th-list"></i></button>
 					</div>
 				</div>
-				
-				<!-- CONTENT LIST -->
-				<div class="property-row">
-					<a class="property-row-image" href="#">
-						<img alt="..." class="" src="img/listing_1.jpg">
-					</a>
-					<div class="property-row-content">
-						<h2 class="property-row-title">
-							<a href="#">Lamb Dale</a>
-							<span class="property-row-title-actions">
-								<span>
-									<a title="Add to favorites" class="favorites-action action-link" href="#">
-										<i class="fa fa-heart-o"></i>
-									</a>
-								</span>
-								<span class="ng-scope">
-									<a href="#" class="compare-add action-link">
-										<i class="fa fa-exchange"></i>
-									</a>
-								</span>
-							</span>
-						</h2>
 
-						<div class="property-row-location">
-							Pico Blvd <span class="separator">/</span> Park <span class="separator">/</span> Palo Alto
-						</div>
+				<!-- ITEM GRID
+				================================================== -->
+				<div class="grid-view show">
+					<div class="row">
 
-						<div class="property-row-body">
-							<p>Vivamus&nbsp;quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi lobortis id. Phasellus eros leo, tempus et augue tempor, interdum blandit felis.…</p>
-							<p></p>
-						</div>
-
-						<div class="property-row-meta">
-							<div class="property-row-meta-item">
-								<span><i class="fa fa-info"></i></span>
-								<strong>Villa</strong>
-							</div>
-							<div class="property-row-meta-item">
-								<span><i class="fa fa-money"></i></span>
-								<strong>$ 220,000</strong>
-							</div>
-							<div class="property-row-meta-item">
-								<span><i class="fa fa-arrows"></i></span>
-								<strong>100 sqft</strong>
-							</div>
-							<div class="property-row-meta-item">
-								<strong>Sold</strong>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				
-				<!-- CONTENT GRID -->
-				<div class="row">
-				
-					<div class="col-sm-6 col-md-4">
-						<div class="property-box-simple">
-							<div class="property-box-image ">
-								<a class="property-box-simple-image-inner" href="#">
-									<img width="570" height="425" alt="17" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" src="img/listing_1.jpg"> 
-									<span class="property-badge">Featured</span>
-									<span class="property-badge property-badge-sticky">TOP</span>
+						<div class="col-sm-6 col-md-4">
+							<div class="item-grid">
+								<a href="#" class="item-grid-image">
+									<img src="img/listing_1.jpg"  alt="..." />
+									<span class="badge">Featured</span>
+									<span class="badge badge-right">TOP</span>
 								</a>
-							</div><!-- /.property-box-image -->
-
-							<div class="property-box-simple-header">
-								<h2><a href="#">Lamb Dale</a></h2>
-								<h3>$ 220,000</h3>
-								<div class="property-box-simple-header-thumbnail">
-									<a href="#">
-										<img width="150" height="150" alt="female" class="attachment-thumbnail size-thumbnail" src="img/agent_2.jpg">
-									</a>
-								</div><!-- /.property-box-simple-header-thumbnail -->
-							</div><!-- /.property-box-simple-header -->
-
-							<div class="property-box-simple-meta">
-								<ul>
-									<li><span>Baths</span><strong>1</strong></li>
-									<li><span>Beds</span><strong>2</strong></li>
-									<li><span>Area</span><strong>100 sqft </strong></li>
-								</ul>    
+								<div class="item-grid-content">
+									<h2><a href="#">Apricot Alcove</a></h2>
+									<h3>$ 125,000</h3>
+									<div class="agent">
+										<a href="#">
+											<img src="img/agent_2.jpg" alt="..." />
+										</a>
+									</div>
+								</div>
+								<div class="meta">
+									<ul>
+										<li><span>Baths</span><strong>2</strong></li>
+										<li><span>Beds</span><strong>2</strong></li>
+										<li><span>Area</span><strong>175 sqft </strong></li>
+									</ul>
+								</div>
 							</div>
-							
 						</div>
-					</div> <!-- End Col -->
-					
-				</div> <!-- End Row -->
-				
-				<!-- PAGINATION -->
-				<ul class="pagination">
-					<li class="prev disabled">
-						<a href="#"><i class="fa fa-angle-left"></i></a>
-					</li>
-					<li class="active"><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
-				</ul>
-				
+
+						<div class="col-sm-6 col-md-4">
+							<div class="item-grid">
+								<a href="#" class="item-grid-image">
+									<img src="img/listing_1.jpg"  alt="..." />
+									<span class="badge">Featured</span>
+									<span class="badge badge-right">TOP</span>
+								</a>
+								<div class="item-grid-content">
+									<h2><a href="#">Apricot Alcove</a></h2>
+									<h3>$ 125,000</h3>
+									<div class="agent">
+										<a href="#">
+											<img src="img/agent_2.jpg" alt="..." />
+										</a>
+									</div>
+								</div>
+								<div class="meta">
+									<ul>
+										<li><span>Baths</span><strong>2</strong></li>
+										<li><span>Beds</span><strong>2</strong></li>
+										<li><span>Area</span><strong>175 sqft </strong></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="item-grid">
+								<a href="#" class="item-grid-image">
+									<img src="img/listing_1.jpg"  alt="..." />
+									<span class="badge">Featured</span>
+									<span class="badge badge-right">TOP</span>
+								</a>
+								<div class="item-grid-content">
+									<h2><a href="#">Apricot Alcove</a></h2>
+									<h3>$ 125,000</h3>
+									<div class="agent">
+										<a href="#">
+											<img src="img/agent_2.jpg" alt="..." />
+										</a>
+									</div>
+								</div>
+								<div class="meta">
+									<ul>
+										<li><span>Baths</span><strong>2</strong></li>
+										<li><span>Beds</span><strong>2</strong></li>
+										<li><span>Area</span><strong>175 sqft </strong></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- ITEM LIST
+				================================================== -->
+				<div class="list-view hide">
+					<div class="item-list">
+						<!-- Image -->
+						<a href="#" class="item-list-image">
+							<img src="img/listing_1.jpg" />
+						</a>
+						<!-- Content -->
+						<div class="item-list-content">
+							<!-- Title -->
+							<h2 class="title">
+	            				<a href="#">Lamb Dale</a>
+	            				<div class="actions">
+		                    		<span class="favorite"><a href="#"><i class="fa fa-heart-o"></i></a></span>
+								    <span class="compare"><a href="#"><i class="fa fa-exchange"></i></a></span>
+		            			</div>
+	        				</h2>
+							<!-- Location -->
+							<div class="location">
+								Pico Blvd <span>/</span> Park <span>/</span> Palo Alto
+							</div>
+							<!-- Description -->
+							<div class="desc">
+								<p>Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi lobortis id. Phasellus eros leo, tempus et augue tempor, interdum blandit felis.</p>
+							</div>
+							<!-- Meta -->
+							<div class="meta">
+								<div class="item">
+									<span><i class="fa fa-info"></i></span>
+									<strong>Villa</strong>
+								</div>
+								<div class="item">
+									<span><i class="fa fa-money"></i></span>
+									<strong>$ 220,000</strong>
+								</div>
+								<div class="item">
+									<span><i class="fa fa-arrows"></i></span>
+									<strong>100 sqft</strong>
+								</div>
+								<div class="item">
+									<strong>Sold</strong>
+								</div>
+							</div>
+						</div>
+					</div> <!-- /.item-list -->
+
+					<div class="item-list">
+						<!-- Image -->
+						<a href="#" class="item-list-image">
+							<img src="img/listing_1.jpg" />
+						</a>
+						<!-- Content -->
+						<div class="item-list-content">
+							<!-- Title -->
+							<h2 class="title">
+	            				<a href="#">Lamb Dale</a>
+	            				<div class="actions">
+		                    		<span class="favorite"><a href="#"><i class="fa fa-heart-o"></i></a></span>
+								    <span class="compare"><a href="#"><i class="fa fa-exchange"></i></a></span>
+		            			</div>
+	        				</h2>
+							<!-- Location -->
+							<div class="location">
+								Pico Blvd <span>/</span> Park <span>/</span> Palo Alto
+							</div>
+							<!-- Description -->
+							<div class="desc">
+								<p>Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi lobortis id. Phasellus eros leo, tempus et augue tempor, interdum blandit felis.</p>
+							</div>
+							<!-- Meta -->
+							<div class="meta">
+								<div class="item">
+									<span><i class="fa fa-info"></i></span>
+									<strong>Villa</strong>
+								</div>
+								<div class="item">
+									<span><i class="fa fa-money"></i></span>
+									<strong>$ 220,000</strong>
+								</div>
+								<div class="item">
+									<span><i class="fa fa-arrows"></i></span>
+									<strong>100 sqft</strong>
+								</div>
+								<div class="item">
+									<strong>Sold</strong>
+								</div>
+							</div>
+						</div>
+					</div> <!-- /.item-list -->
+
+					<div class="item-list">
+						<!-- Image -->
+						<a href="#" class="item-list-image">
+							<img src="img/listing_1.jpg" />
+						</a>
+						<!-- Content -->
+						<div class="item-list-content">
+							<!-- Title -->
+							<h2 class="title">
+	            				<a href="#">Lamb Dale</a>
+	            				<div class="actions">
+		                    		<span class="favorite"><a href="#"><i class="fa fa-heart-o"></i></a></span>
+								    <span class="compare"><a href="#"><i class="fa fa-exchange"></i></a></span>
+		            			</div>
+	        				</h2>
+							<!-- Location -->
+							<div class="location">
+								Pico Blvd <span>/</span> Park <span>/</span> Palo Alto
+							</div>
+							<!-- Description -->
+							<div class="desc">
+								<p>Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi lobortis id. Phasellus eros leo, tempus et augue tempor, interdum blandit felis.</p>
+							</div>
+							<!-- Meta -->
+							<div class="meta">
+								<div class="item">
+									<span><i class="fa fa-info"></i></span>
+									<strong>Villa</strong>
+								</div>
+								<div class="item">
+									<span><i class="fa fa-money"></i></span>
+									<strong>$ 220,000</strong>
+								</div>
+								<div class="item">
+									<span><i class="fa fa-arrows"></i></span>
+									<strong>100 sqft</strong>
+								</div>
+								<div class="item">
+									<strong>Sold</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- PAGINATION
+				================================================== -->
+				<div class="pagination">
+					<ul class="page">
+						<li class="prev">
+							<a href="#"><i class="fa fa-angle-left"></i></a>
+						</li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+					</ul>
+				</div>
+
 				<!-- HEADING -->
-				<div class="heading-wrapper">
+				<div class="heading">
 					<h2 class="heading-title">Recent Sales</h2>
 				</div>
-				
-				<div class="table-responsive">
+
+				<div class="sales">
 					<table class="table">
 						<thead>
 							<tr>
-								<th>Address</th>
-								<th>Sold Date</th>
-								<th>Bed</th>
-								<th>Bath</th>
-								<th>Car</th>
-								<th>Sale Price</th>
+								<th class="address">Address</th>
+								<th class="sold-date">Sold Date</th>
+								<th class="bed">Bed</th>
+								<th class="bath">Bath</th>
+								<th class="car">Car</th>
+								<th class="sale-price">Sale Price</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>NAILSWORTH</td>
-								<td>25-02-2104</td>
-								<td>3</td>
-								<td>1</td>
-								<td>4</td>
-								<td>Undisclosed</td>
+								<td class="address">NAILSWORTH</td>
+								<td class="sold-date">25-02-2104</td>
+								<td class="bed">3</td>
+								<td class="bath">1</td>
+								<td class="car">4</td>
+								<td class="sale-price">Undisclosed</td>
 							</tr>
 							<tr>
-								<td>KAITAIA</td>
-								<td>19-08-2018</td>
-								<td>4</td>
-								<td>1</td>
-								<td>1</td>
-								<td>$102,275</td>
+								<td class="address">KAITAIA</td>
+								<td class="sold-date">19-08-2018</td>
+								<td class="bed">4</td>
+								<td class="bath">1</td>
+								<td class="car">1</td>
+								<td class="sale-price">$102,275</td>
 							</tr>
 							<tr>
-								<td>SMITHFIELD</td>
-								<td>29-01-2016</td>
-								<td>0</td>
-								<td>0</td>
-								<td>0</td>
-								<td>Undisclosed</td>
+								<td class="address">SMITHFIELD</td>
+								<td class="sold-date">29-01-2016</td>
+								<td class="bed">0</td>
+								<td class="bath">0</td>
+								<td class="car">0</td>
+								<td class="sale-price">Undisclosed</td>
 							</tr>
 							<tr>
-								<td>BAULKHAM HILLS</td>
-								<td>22-01-2016</td>
-								<td>3</td>
-								<td>1</td>
-								<td>2</td>
-								<td>$965,000</td>
+								<td class="address">BAULKHAM HILLS</td>
+								<td class="sold-date">22-01-2016</td>
+								<td class="bed">3</td>
+								<td class="bath">1</td>
+								<td class="car">2</td>
+								<td class="sale-price">$965,000</td>
 							</tr>
 							<tr>
-								<td>BEXLEY</td>
-								<td>28-12-2015</td>
-								<td>3</td>
-								<td>1</td>
-								<td>2</td>
-								<td>$1,390,000</td>
+								<td class="address">BEXLEY</td>
+								<td class="sold-date">28-12-2015</td>
+								<td class="bed">3</td>
+								<td class="bath">1</td>
+								<td class="car">2</td>
+								<td class="sale-price">$1,390,000</td>
 							</tr>
 							<tr>
-								<td>Morayfield</td>
-								<td>21-12-2015</td>
-								<td>4</td>
-								<td>2</td>
-								<td>2</td>
-								<td>Undisclosed</td>
+								<td class="address">Morayfield</td>
+								<td class="sold-date">21-12-2015</td>
+								<td class="bed">4</td>
+								<td class="bath">2</td>
+								<td class="car">2</td>
+								<td class="sale-price">Undisclosed</td>
 							</tr>
 							<tr>
-								<td>PASIFIC PINES</td>
-								<td>17-12-2015</td>
-								<td>4</td>
-								<td>3</td>
-								<td>2</td>
-								<td>$481,000</td>
+								<td class="address">PASIFIC PINES</td>
+								<td class="sold-date">17-12-2015</td>
+								<td class="bed">4</td>
+								<td class="bath">3</td>
+								<td class="car">2</td>
+								<td class="sale-price">$481,000</td>
 							</tr>
 							<tr>
-								<td>YORKEYS KNOB</td>
-								<td>14-12-2015</td>
-								<td>1</td>
-								<td>1</td>
-								<td>0</td>
-								<td>Undisclosed</td>
+								<td class="address">YORKEYS KNOB</td>
+								<td class="sold-date">14-12-2015</td>
+								<td class="bed">1</td>
+								<td class="bath">1</td>
+								<td class="car">0</td>
+								<td class="sale-price">Undisclosed</td>
 							</tr>
 							<tr>
-								<td>YORKEYS KNOB</td>
-								<td>9-12-2015</td>
-								<td>3</td>
-								<td>1</td>
-								<td>0</td>
-								<td>Undisclosed</td>
+								<td class="address">YORKEYS KNOB</td>
+								<td class="sold-date">9-12-2015</td>
+								<td class="bed">3</td>
+								<td class="bath">1</td>
+								<td class="car">0</td>
+								<td class="sale-price">Undisclosed</td>
 							</tr>
 							<tr>
-								<td>YORKEYS KNOB</td>
-								<td>9-12-2015</td>
-								<td>2</td>
-								<td>2</td>
-								<td>1</td>
-								<td>$213,000</td>
+								<td class="address">YORKEYS KNOB</td>
+								<td class="sold-date">9-12-2015</td>
+								<td class="bed">2</td>
+								<td class="bath">2</td>
+								<td class="car">1</td>
+								<td class="sale-price">$213,000</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				
-			</div> <!-- End Main -->
+
+			</div>
+			<!-- End Main -->
 
 			<!-- SIDEBAR -->
 			<div class="col-md-3 sidebar">
-			
+
 				<!-- OUR AGENTS -->
-				<div class="our-agents box">
-					<h3>Our Agents</h3>
+				<div class="widget our-agents">
+					<h3 class="widget-title">Our Agents</h3>
 					<div class="media">
 						<div class="media-left">
 							<a href="#"> <img alt="..." src="img/agent_1.jpg"> </a>
 						</div>
 						<div class="media-body">
 							<span>Lamb Dale</span>
-							<span>Vila</span>
+							<span>Villa</span>
 							<span>$220,000</span>
 						</div>
 					</div>
@@ -368,7 +521,7 @@
 						</div>
 						<div class="media-body">
 							<span>Lamb Dale</span>
-							<span>Vila</span>
+							<span>Villa</span>
 							<span>$220,000</span>
 						</div>
 					</div>
@@ -378,22 +531,22 @@
 						</div>
 						<div class="media-body">
 							<span>Lamb Dale</span>
-							<span>Vila</span>
+							<span>Villa</span>
 							<span>$220,000</span>
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- FEATURED PROPERTIES -->
-				<div class="listing box">
-					<h3>Featured Properties</h3>
+				<div class="widget listing">
+					<h3 class="widget-title">Featured Properties</h3>
 					<div class="media">
 						<div class="media-left">
 							<a href="#"> <img alt="..." src="img/listing_1.jpg"> </a>
 						</div>
 						<div class="media-body">
 							<span>Lamb Dale</span>
-							<span>Vila</span>
+							<span>Villa</span>
 							<span>$220,000</span>
 						</div>
 					</div>
@@ -403,7 +556,7 @@
 						</div>
 						<div class="media-body">
 							<span>Lamb Dale</span>
-							<span>Vila</span>
+							<span>Villa</span>
 							<span>$220,000</span>
 						</div>
 					</div>
@@ -413,7 +566,7 @@
 						</div>
 						<div class="media-body">
 							<span>Lamb Dale</span>
-							<span>Vila</span>
+							<span>Villa</span>
 							<span>$220,000</span>
 						</div>
 					</div>
@@ -423,7 +576,7 @@
 						</div>
 						<div class="media-body">
 							<span>Lamb Dale</span>
-							<span>Vila</span>
+							<span>Villa</span>
 							<span>$220,000</span>
 						</div>
 					</div>
@@ -433,23 +586,23 @@
 						</div>
 						<div class="media-body">
 							<span>Lamb Dale</span>
-							<span>Vila</span>
+							<span>Villa</span>
 							<span>$220,000</span>
 						</div>
 					</div>
 				</div>
-				
+
 			</div> <!-- End Sidebar -->
 
 		</div> <!-- End Row -->
-	</div> <!-- End Container -->
-	
+	</div> 	<!-- End Container -->
+
 	<!-- Partner
 	================================================== -->
 	<div class="partner-logos">
 		<div class="container">
 			<div class="row">
-			
+
 				<div class="col-xs-4 col-sm-2">
 					<a href="#"><img alt="" src="img/logo_sweethome.png"></a>
 				</div>
@@ -468,27 +621,30 @@
 				<div class="col-xs-4 col-sm-2">
 					<a href="#"><img alt="" src="img/logo_newhome.png"></a>
 				</div>
-				
-			</div> <!-- End Row -->
-		</div> <!-- End Container -->
-	</div> <!-- End Partner Logos -->
-	
+
+			</div>
+			<!-- End Row -->
+		</div>
+		<!-- End Container -->
+	</div>
+	<!-- End Partner Logos -->
+
 	<!-- FOOTER
 	================================================== -->
 	<footer class="footer">
 		<!-- FOOTER TOP -->
 		<div class="container">
 			<div class="row">
-			
-				<div class="col-sm-6 col-md-3 listing box">
-					<h3>Recent</h3>
+
+				<div class="col-sm-6 col-md-3 listing widget">
+					<h3 class="widget-title">Recent Properties</h3>
 					<div class="media">
 						<div class="media-left">
 							<a href="#"> <img alt="..." src="img/listing_recent_1.jpg"> </a>
 						</div>
 						<div class="media-body">
 							<span>Lamb Dale</span>
-							<span>Vila</span>
+							<span>Villa</span>
 							<span>$220,000</span>
 						</div>
 					</div>
@@ -497,9 +653,9 @@
 							<a href="#"> <img alt="..." src="img/listing_recent_2.jpg"> </a>
 						</div>
 						<div class="media-body">
-							<span>Lamb Dale</span>
-							<span>Vila</span>
-							<span>$220,000</span>
+							<span>Cotton Ridge</span>
+							<span>House</span>
+							<span>$340,000</span>
 						</div>
 					</div>
 					<div class="media">
@@ -507,15 +663,15 @@
 							<a href="#"> <img alt="..." src="img/listing_recent_3.jpg"> </a>
 						</div>
 						<div class="media-body">
-							<span>Lamb Dale</span>
-							<span>Vila</span>
-							<span>$220,000</span>
+							<span>Apricot Alcove</span>
+							<span>Apartement</span>
+							<span>$125,000</span>
 						</div>
 					</div>
 				</div>
-				
-				<div class="col-sm-6 col-md-3 quick-links box">
-					<h3>Quick Links</h3>
+
+				<div class="col-sm-6 col-md-3 quick-links widget">
+					<h3 class="widget-title">Quick Links</h3>
 					<ul>
 						<li><a href="#">Homepage</a></li>
 						<li><a href="#">Recent Properties</a></li>
@@ -526,9 +682,9 @@
 						<li><a href="#">Contact Form</a></li>
 					</ul>
 				</div>
-				
-				<div class="col-sm-6 col-md-3 our-agents box">
-					<h3>Our Agents</h3>
+
+				<div class="col-sm-6 col-md-3 our-agents widget">
+					<h3 class="widget-title">Our Agents</h3>
 					<div class="media">
 						<div class="media-left">
 							<a href="#"><img alt="..." src="img/agent_1.jpg"></a>
@@ -560,9 +716,9 @@
 						</div>
 					</div>
 				</div>
-				
-				<div class="col-sm-6 col-md-3 contact box">
-					<h3>Contact</h3>
+
+				<div class="col-sm-6 col-md-3 contact widget">
+					<h3 class="widget-title">Contact</h3>
 					<div class="media">
 						<div class="media-left">
 							<i class="fa fa-map-marker"></i> Address:
@@ -583,7 +739,7 @@
 					</div>
 					<div class="media">
 						<div class="media-left">
-							<i class="fa fa-at"></i> Email:
+							<i class="fa fa-at"></i> E-mail:
 						</div>
 						<div class="media-body">
 							info@realty.com
@@ -597,7 +753,7 @@
 							realty
 						</div>
 					</div>
-					
+
 					<ul class="socmed">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -606,16 +762,19 @@
 					</ul>
 				</div>
 
-			</div> <!-- End Row -->
-		</div> <!-- End Container -->
-		
+			</div>
+			<!-- End Row -->
+		</div>
+		<!-- End Container -->
+
 		<!-- FOOTER BOTTOM -->
 		<div class="footer-bottom">
-			<a href="#top" id="smoothup" title="Back to top"><i class="fa fa-angle-up"></i></a>
+			<a href="#top" id="toTop" title="Back to top"><i class="fa fa-angle-up"></i></a>
 		</div>
-		
-	</footer> <!-- End Footer -->
-	
+
+	</footer>
+	<!-- End Footer -->
+
 	<!-- SCRIPT
 	================================================== -->
 	<script src="js/jquery-1.11.3.min.js"></script>

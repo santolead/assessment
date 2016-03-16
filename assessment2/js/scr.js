@@ -4,20 +4,33 @@
  *	Designed by Santo
  *	Website www.softwareseni.com
 -------------------------------------------------- */
+(function($){
+    "use strict";
 
-jQuery(document).ready(function($){
-	
-	$('button').on('click',function(e) {
-		if ($(this).hasClass('grid')) {
-			$('#container ul').removeClass('list').addClass('grid');
-		}
-		else if($(this).hasClass('list')) {
-			$('#container ul').removeClass('grid').addClass('list');
-		}
+	/* On Document Ready */
+	$(document).ready(function() {
+		initSwitch();
+		initToTop()
 	});
-	
-	$('#smoothup').on('click', function(){
-		$('html, body').animate({scrollTop:0}, 'slow');
-		return false;
-	});
-});
+
+	function initSwitch(){
+		$('button').on('click',function(e) {
+			if ($('.list-view').hasClass('show')) {
+				$('.list-view').removeClass('show').addClass('hide');
+				$('.grid-view').removeClass('hide').addClass('show');
+			}
+			else if($('.grid-view').hasClass('show')) {
+				$('.grid-view').removeClass('show').addClass('hide');
+				$('.list-view').removeClass('hide').addClass('show');
+			}
+		});
+	};
+
+	function initToTop(){
+		$('#toTop').on('click', function(){
+			$('html, body').animate({scrollTop:0}, 'slow');
+			return false;
+		});
+	};
+
+})(jQuery);
